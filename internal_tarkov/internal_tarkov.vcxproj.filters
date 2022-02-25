@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inl">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="inl\mono">
+      <UniqueIdentifier>{ff2dd0d4-59a8-4e4d-b017-c29f7a344608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inl\hooks">
+      <UniqueIdentifier>{e7ee34e2-49fc-498f-ac58-a682a21f1d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inl\hooks\fn">
+      <UniqueIdentifier>{9ddc9a5f-bdfd-436c-8c0c-61001fc46548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inl\chloe">
+      <UniqueIdentifier>{e2ffbf18-44cd-47f2-8bdb-534ee3c6cb4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inl\renderer">
+      <UniqueIdentifier>{7ea964a0-3aaa-40cd-9a21-43ba674fe2fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{576c6460-00d3-47c7-959d-e89e04160b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\features">
+      <UniqueIdentifier>{a09b7b9a-ea94-42f1-8b1b-a3d033f465d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\sdk">
+      <UniqueIdentifier>{f8d7d9b1-659e-4a4e-8047-9a29a6a2e5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\bundle">
+      <UniqueIdentifier>{28cee604-4368-495e-a009-8c939f685c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inl\menu">
+      <UniqueIdentifier>{5bd25cf5-d107-4c28-a396-13d9d404fef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inl\menu\framework">
+      <UniqueIdentifier>{ae083465-4c55-4544-8b6f-2ccc8a87db31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inl\menu\drawlist">
+      <UniqueIdentifier>{8faaf443-2e10-4d17-bcff-c085922fdbf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\unity">
+      <UniqueIdentifier>{325c3ac3-a675-4469-8790-8ccf00633385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\features\rage">
+      <UniqueIdentifier>{598485fe-ce24-46cc-b88c-e8c3033bad7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\features\visual">
+      <UniqueIdentifier>{213c1448-407c-4501-9739-2fef5323a87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\features\misc">
+      <UniqueIdentifier>{3ce125a0-542e-4fa1-9436-caff80e4cc16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripting">
+      <UniqueIdentifier>{60cc56dc-7136-480b-aeb2-058660adff49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripting\duktape">
+      <UniqueIdentifier>{100e291b-e25f-4c91-87e4-14edd5c664c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripting\classes">
+      <UniqueIdentifier>{aa491a8a-c31e-4518-9348-684839243203}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dll_main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>inl\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="framework.cpp">
+      <Filter>inl\menu\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_get_skinned_mesh_renderer.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_gui_controller_update.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_gui_controller_ongui.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_set_fov.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_preloader_ui_update.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_list.cpp">
+      <Filter>inl\menu\drawlist</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_apply_shot.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_create_shot.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="hk_overall_screen_show.cpp">
+      <Filter>inl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="aimbot.cpp">
+      <Filter>game\features\rage</Filter>
+    </ClCompile>
+    <ClCompile Include="visuals.cpp">
+      <Filter>game\features\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.cpp">
+      <Filter>game\features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="weapon.cpp">
+      <Filter>game\features\rage</Filter>
+    </ClCompile>
+    <ClCompile Include="duktape\duktape.c">
+      <Filter>scripting\duktape</Filter>
+    </ClCompile>
+    <ClCompile Include="script_manager.cpp">
+      <Filter>scripting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="managed_system.hpp">
+      <Filter>inl\mono</Filter>
+    </ClInclude>
+    <ClInclude Include="mono_lib.hpp">
+      <Filter>inl\mono</Filter>
+    </ClInclude>
+    <ClInclude Include="hook_lib.hpp">
+      <Filter>inl\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="sapphire_importer.hpp">
+      <Filter>inl\chloe</Filter>
+    </ClInclude>
+    <ClInclude Include="sapphire_crt.hpp">
+      <Filter>inl\chloe</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp">
+      <Filter>inl\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_render.hpp">
+      <Filter>inl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.hpp">
+      <Filter>game\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="c_player.hpp">
+      <Filter>game\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="c_world.hpp">
+      <Filter>game\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.hpp">
+      <Filter>game\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="bundle_bytes.hpp">
+      <Filter>game\bundle</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.hpp">
+      <Filter>inl\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.hpp">
+      <Filter>inl\menu\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.hpp">
+      <Filter>inl\chloe</Filter>
+    </ClInclude>
+    <ClInclude Include="unity.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_material.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_renderer.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_math.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_time.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_screen.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_shader.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_asset_bundle.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="c_transform.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_list.hpp">
+      <Filter>inl\menu\drawlist</Filter>
+    </ClInclude>
+    <ClInclude Include="c_camera.hpp">
+      <Filter>game\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="aimbot.hpp">
+      <Filter>game\features\rage</Filter>
+    </ClInclude>
+    <ClInclude Include="visuals.hpp">
+      <Filter>game\features\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="notifications.hpp">
+      <Filter>game\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc.hpp">
+      <Filter>game\features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="weapon.hpp">
+      <Filter>game\features\rage</Filter>
+    </ClInclude>
+    <ClInclude Include="duktape\duk_config.h">
+      <Filter>scripting\duktape</Filter>
+    </ClInclude>
+    <ClInclude Include="duktape\duktape.h">
+      <Filter>scripting\duktape</Filter>
+    </ClInclude>
+    <ClInclude Include="script_manager.hpp">
+      <Filter>scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="js_player.hpp">
+      <Filter>scripting\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="js_renderer.hpp">
+      <Filter>scripting\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="js_utils.hpp">
+      <Filter>scripting\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="js_cheat.hpp">
+      <Filter>scripting\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="js_engine.hpp">
+      <Filter>scripting\classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
